@@ -4,7 +4,7 @@ const url = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
 const key = (process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY)?.trim();
 
 export function configError(): string | null {
-  if (!url || !key) return 'Supabase is not configured. Check .env.local next to package.json and restart npm.cmd run dev.';
+  if (!url || !key) return 'Sign-in is not connected yet. Website owner: check NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in Render Environment, then save and rebuild. For local testing, use .env.local.';
   try {
     const address = new URL(url);
     if (address.protocol !== 'https:' || !address.hostname.endsWith('.supabase.co') || address.pathname !== '/') {
