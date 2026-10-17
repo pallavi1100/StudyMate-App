@@ -48,7 +48,7 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your-public-publishable-key
 npm run dev
 ```
 
-Open **http://localhost:3000**. Click **Get started** to create your account. After login, use dashboard and test persistence by reloading.
+Open **[https://studymate-app-1.onrender.com]**. Click **Get started** to create your account. After login, use dashboard and test persistence by reloading.
 
 Stop server: Ctrl+C in terminal.
 
